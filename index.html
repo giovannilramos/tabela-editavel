@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegador em tabela HTML</title>
+    <!--Links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+        integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="./js/scrpits.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div id="conteudo">
+            <table class="tabelaEditavel table">
+                    <td colspan="1"><img src="" alt="SGQ"></th>
+                    <td colspan="6" class="text-center">FORDTS - RELATÓRIO DE ATENDIMENTO TÉCNICO</td>
+                    <td colspan="2">Versão 4.0 <br>FORDTS006 <br>Julho/2012</td>
+                <tbody>
+                    <tr>
+                        <td colspan="6" rowspan="2"><img class="logo_ricoh" src="./img/1024px-Ricoh_logo_2005.png" alt="RICOH"></td>
+                        <td>Hora: </td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>OS: </td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="8">
+                            ABERTURA DE CHAMADO TÉCNICO</td>
+                    </tr>
+                    <tr>
+                        <td>EMPRESA:</td>
+                        <td colspan="4" class="edit"></td>
+                        <td>CONTATO:</td>
+                        <td colspan="3" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>DEPTO/SETOR:</td>
+                        <td colspan="4" class="edit"></td>
+                        <td>TEL:</td>
+                        <td colspan="3" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>ENDEREÇO:</td>
+                        <td colspan="4" class="edit"></td>
+                        <td>BAIRRO:</td>
+                        <td colspan="3" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">DATA DO ATENDIMENTO</td>
+                        <td colspan="3" class="edit"></td>
+                        <td>H. CHEGADA:</td>
+                        <td class="edit"></td>
+                        <td>CIDADE:</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="3">
+                            DESCRIÇÃO DO DEFEITO RECLAMADO</td>
+                        <td class="text-center table-dark titulo" colspan="2">TRAC
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="3">TIPO
+                            DE ATENDIMENTO</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 10px;" colspan="3" class="edit"></td>
+                        <td colspan="2" class="edit"></td>
+                        <td colspan="3" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="2">
+                            EQUIPAMENTO</td>
+                        <td class="text-center table-dark titulo" colspan="2">
+                            DESLOCAMENTO
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="2">TEMPO
+                            DE TRABALHO</td>
+                        <td class="text-center table-dark titulo" colspan="2">
+                            DESPESAS R$</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo:</td>
+                        <td class="edit"></td>
+                        <td>Inicial:</td>
+                        <td class="edit"></td>
+                        <td>Início:</td>
+                        <td class="edit"></td>
+                        <td colspan="2" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>Nº Série:</td>
+                        <td class="edit"></td>
+                        <td>Final:</td>
+                        <td class="edit"></td>
+                        <td>Término:</td>
+                        <td class="edit"></td>
+                        <td>Custo:</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td>Ativo fixo:</td>
+                        <td class="edit"></td>
+                        <td>T.D:</td>
+                        <td class="edit"></td>
+                        <td>T.A:</td>
+                        <td class="edit"></td>
+                        <td>KM:</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="2">SCALT
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="3">
+                            CÓDIGO DO PROBLEMA</td>
+                        <td class="text-center table-dark titulo" colspan="3">
+                            COMENTÁRIO</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">SINTOMA</td>
+                        <td class="edit" colspan="3"></td>
+                        <td class="edit" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">CAUSA</td>
+                        <td class="edit" colspan="3"></td>
+                        <td class="edit" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">AÇÃO</td>
+                        <td class="edit" colspan="3"></td>
+                        <td class="edit" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">LOCALIZAÇÃO</td>
+                        <td class="edit" colspan="3"></td>
+                        <td class="edit" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">OBJETIVO</td>
+                        <td class="edit" colspan="3"></td>
+                        <td class="edit" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="8">
+                            PEÇAS/SUPRIMENTOS APLICADOS E PENDÊNCIAS</td>
+                    </tr>
+                    <tr>
+                        <td>CÓDIGO/PART NUMBER</td>
+                        <td colspan="4">DESCRIÇÃO</td>
+                        <td>QUANT.</td>
+                        <td>CONDIÇÃO</td>
+                        <td>TIPO DE ENVIO</td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="edit"></td>
+                        <td class="edit" colspan="4"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="4">CHECKLIST DE INSTALAÇÃO
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="4">
+                            MANUTENÇÃO PREVENTIVA</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">PROCEDIMENTO</td>
+                        <td>REALIZADO</td>
+                        <td colspan="3">PROCEDIMENTO</td>
+                        <td>REALIZADO</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Instalação elétrica - 110/220 V</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. Sistema Ótico</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Local é apropriado para instalação</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. Externa</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Montagem do Gabinete</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. Reservatório de Toner usado</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Avarias no equipamento?</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. do vidro vedação do lazer</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Configuração de endereço IP</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. do vidro Exposição</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Configuração do Gateway</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Verificação da vida útil do Kits Manut.</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Configuração da Máscara de Rede</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Verificação do Sistema de Fusão</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Configuração de FAX</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. dos roletes entrada/Transferência</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Configuração do Scanner</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Verificação dos roletes do ADRF</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Testes de cópia / Impressão</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. dos sensores de atolamento do ARDF</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Testes de fax</td>
+                        <td class="edit"></td>
+                        <td colspan="3">Limp. dos Acessórios</td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Testes de Scanner / Digitalização</td>
+                        <td class="edit"></td>
+                        <td colspan="3"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Troca da linguagem para portugês</td>
+                        <td class="edit"></td>
+                        <td colspan="3"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Treinamento Operacional</td>
+                        <td class="edit"></td>
+                        <td colspan="3"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Demonstração do Equipamento</td>
+                        <td class="edit"></td>
+                        <td colspan="3"></td>
+                        <td class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="3">CONDIÇÃO FINAL DO EQUIPAMENTO</td>
+                        <td class="text-center table-dark titulo" colspan="2">CONTADOR P&B
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="3">CONTADOR COLLOR</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 10px;" colspan="3" class="edit"></td>
+                        <td colspan="2" class="edit"></td>
+                        <td colspan="3" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="8">
+                            SAR</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 100px;" colspan="8" class="edit"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center table-dark titulo" colspan="4">TÉCNICO
+                        </td>
+                        <td class="text-center table-dark titulo" colspan="4">
+                            CLIENTE</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="edit">Nome: </td>
+                        <td colspan="4" class="edit">Nome: </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="edit">Assinatura: </td>
+                        <td colspan="4" class="edit">Assinatura: </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="button" class="btn btn-danger" id="btGerarPDF" onclick="window.print()">Gerar PDF</button>
+    </div>
+</body>
+
+</html>
